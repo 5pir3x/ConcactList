@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="Contacts">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Add New Contact" onAction="#toNewContactController"/>
+                        <MenuItem mnemonicParsing="false" text="Edit Contact" onAction="#editSelectedItem" />
+                        <MenuItem id="deleteButton" mnemonicParsing="false" onAction="#deleteSelectedItem" text="Delete Contact" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleExit" text="Exit" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+    <center>
+        <TableView fx:id="tableview" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="firstName" prefWidth="150" text="First Name" />
+                <TableColumn fx:id="secondName" prefWidth="150" text="Last Name" />
+                <TableColumn fx:id="phoneNumber" prefWidth="150" text="Phone Number" />
+                <TableColumn fx:id="notes" prefWidth="150" text="Notes" />
+            </columns>
+        </TableView>
+    </center>
+</BorderPane>
