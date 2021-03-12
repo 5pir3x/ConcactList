@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<DialogPane fx:controller="sample.EditContactControler" prefHeight="236.0" prefWidth="648.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<DialogPane fx:controller="EditContactControler" prefHeight="236.0" prefWidth="648.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <content>
       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="6.0" prefWidth="648.0">
          <children>

@@ -1,4 +1,3 @@
-package sample;
 
 public class Contact {
     private String firstName;
